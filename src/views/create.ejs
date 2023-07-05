@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agregar Reserva</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agregar Reserva</h1>
+
+      <form action="/api/reservas/crear" method="POST">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="fechaReserva" class="form-label">Fecha de Reserva:</label>
+          <input
+            type="date"
+            id="fechaReserva"
+            name="fechaReserva"
+            required
+            class="form-control"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+    <script src=""></script>
+  </body>
+</html>

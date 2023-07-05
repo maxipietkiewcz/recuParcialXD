@@ -1,6 +1,6 @@
 const { sequelize, DataTypes } = require("../config/db.js");
 
-const Reserva = sequelize.define(
+const Reservas = sequelize.define(
   "reserva",
   {
     id: {
@@ -23,4 +23,4 @@ const Reserva = sequelize.define(
   }
 );
 
-module.exports = Reserva;
+module.exports = Reservas;
